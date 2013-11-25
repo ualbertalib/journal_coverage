@@ -11,4 +11,8 @@ class Journal
     @issn == journal.issn && @object_id == journal.object_id
   end
 
+  def to_s
+    "ISSN: #{@issn}: OBJECT ID: #{@object_id}"
+  end
+
 end
