@@ -1,6 +1,6 @@
 require "nokogiri"
 
-class SpringerJournals
+class Journals
 
   attr_reader :list
 

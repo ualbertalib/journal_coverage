@@ -1,2 +1,2 @@
 require_relative '../journal'
-require_relative '../springer_journals'
+require_relative '../journals'
