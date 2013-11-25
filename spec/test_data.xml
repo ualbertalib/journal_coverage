@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+ <!-- FIRST INCREMENTAL -->
+ <!-- INSTANCE:resolver -->
+ <record>
+  <leader>-----nas-a2200000z--4500</leader>
+  <controlfield tag="008">131125uuuuuuuuuxx-uu-|------u|----|dut-d</controlfield>
+  <datafield tag="010" ind1="" ind2="">
+   <subfield code="a">  2004233204</subfield>
+  </datafield>
+  <datafield tag="245" ind1="" ind2="0">
+   <subfield code="a">De Economist</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">ECONOMIST KLUWER</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">ECONOMIST (LEIDEN)</subfield>
+  </datafield>
+  <datafield tag="210" ind1="" ind2="">
+   <subfield code="a">ECONOMIST-NETHERLAND</subfield>
+  </datafield>
+  <datafield tag="260" ind1="" ind2="">
+   <subfield code="a">Dordrecht</subfield>
+   <subfield code="b">Springer US</subfield>
+  </datafield>
+  <datafield tag="022" ind1="" ind2="">
+   <subfield code="a">0013-063X</subfield>
+  </datafield>
+  <datafield tag="776" ind1="" ind2="">
+   <subfield code="x">1572-9982</subfield>
+  </datafield>
+  <datafield tag="090" ind1="" ind2="">
+   <subfield code="a">954921341152</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 1852 volume: 1 issue: 1 until 1996. </subfield>
+   <subfield code="s">1000000000002986</subfield>
+   <subfield code="t">1000000000002296</subfield>
+   <subfield code="x">Canadian Research Knowledge Network Springer Link Archive:Full Text</subfield>
+   <subfield code="z">1000000001789142</subfield>
+  </datafield>
+  <datafield tag="866" ind1="" ind2="">
+   <subfield code="a">Available from 1997 volume: 145 issue: 1. </subfield>
+   <subfield code="s">1000000000002533</subfield>
+   <subfield code="t">1000000000001874</subfield>
+   <subfield code="x">Canadian Research Knowledge Network Springer Link Current:Full Text</subfield>
+   <subfield code="z">1000000000949101</subfield>
+  </datafield>
+ </record>
+</collection>
