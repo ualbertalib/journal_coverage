@@ -9,7 +9,7 @@ describe Journals do
   end
 
   describe "#new" do
-    it "should return a SpringerJournals object" do
+    it "should return a Journals object" do
       @journals.should be_an_instance_of Journals
     end
   end
