@@ -32,6 +32,12 @@ describe WebServices do
       confirmed_record.call_by_object_id("110985822451368")
       confirmed_record.date_statement == "1921-1925"
     end
+
+    it "should return an xml message" do
+      failing_record = WebServices.new
+      failing_record.call_by_object_id("954921411350")
+      failing_record.date_statement.should == "Record not found in Sirsi"
+    end
   end
 
 end
