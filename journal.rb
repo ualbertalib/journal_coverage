@@ -15,7 +15,7 @@ class Journal < WebServices
   end
 
   def to_s
-    "ISSN: #{@issn}: OBJECT ID: #{@object_id}"
+    "ISSN: #{@issn}: / OBJECT ID: #{@object_id} / DATE FROM SIRSI: #{date_statement}"
   end
 
 end
