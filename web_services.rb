@@ -26,7 +26,7 @@ class WebServices
     doc.xpath("//MarcEntryInfo").each do |element|
       element_value = element.xpath("text").text
       if(element_value.include? "University of Alberta Access") then
-        return element_value[element_value.index(':'), -1]
+        return element_value[element_value.index(':')+2..-1]
       end
     end
   end

@@ -30,4 +30,11 @@ describe Journal do
       @journal.to_s.should == journal_to_s
     end
   end
+
+  describe "#date_statement" do
+    it "should return the date statement for the journal" do
+      journal = Journal.new({:issn=>"0000-0019", :object_id=>"954921332001"})
+      journal.date_statement.should == "1990-"
+    end
+  end
 end

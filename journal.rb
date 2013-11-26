@@ -1,10 +1,13 @@
-class Journal
+require_relative "web_services"
+
+class Journal < WebServices
 
   attr_reader :issn, :object_id
 
   def initialize(options={})
     @issn = options[:issn]
     @object_id = options[:object_id]
+    call_by_object_id(@object_id)
   end
 
   def ==(journal)
