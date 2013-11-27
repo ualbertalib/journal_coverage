@@ -1,6 +1,8 @@
 require "nokogiri"
+require_relative "journal"
+require_relative "summary_holdings"
 
-class Journals
+class Journals < SummaryHoldings
 
   attr_reader :list
 
@@ -27,10 +29,18 @@ class Journals
       if journal == @list.last then
         journals+=journal.to_s
       else
-        journals+=journal.to_s+", "
+        journals+=journal.to_s+"\n"
       end
     end
     journals
+  end
+
+  def report
+    report_text = "ISSN, OBJECT ID, SIRSI DATE, SFX DATE\n"
+    @list.each do |journal|
+      report_text += journal.to_s+", "+statement(journal.object_id)+"\n"
+    end
+    report_text
   end
 end
 

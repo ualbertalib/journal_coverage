@@ -3,6 +3,7 @@ require_relative "web_services"
 class Journal < WebServices
 
   attr_reader :issn, :object_id
+  attr_writer :sfx_statement
 
   def initialize(options={})
     @issn = options[:issn]
@@ -15,7 +16,6 @@ class Journal < WebServices
   end
 
   def to_s
-    "ISSN: #{@issn}: / OBJECT ID: #{@object_id} / DATE FROM SIRSI: #{date_statement}"
+    "#{@issn}, #{@object_id}, #{date_statement}"
   end
-
 end

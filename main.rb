@@ -1,6 +1,8 @@
-require_relative "journal.rb"
-require_relative "journals.rb"
+require_relative "journals"
 
 journals = Journals.new
 journals.read ARGV[0]
-puts journals.print
+journals.load_data ARGV[1]
+puts journals.report
+
+
