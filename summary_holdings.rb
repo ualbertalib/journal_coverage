@@ -20,6 +20,7 @@ class SummaryHoldings
         return "#{years[0]}-#{years[1]}".strip if years.size==2
         return "#{years[0]}-#{years[1]}, #{years[2]}-".strip if years.size==3
         return "#{years[0]}-#{years[1]}, #{years[2]}-#{years[3]}".strip if years.size==4
+        return "#{years.first}-#{years.last}".strip if years.size > 4
       end
     else
       return "Not found in summary holdings file"

@@ -38,7 +38,7 @@ class Journals < SummaryHoldings
   def report
     report_text = "ISSN, OBJECT ID, SIRSI DATE, SFX DATE\n"
     @list.each do |journal|
-      report_text += journal.to_s+", "+statement(journal.object_id)+"\n"
+      report_text += journal.to_s+", ["+statement(journal.object_id)+"]\n"
     end
     report_text
   end

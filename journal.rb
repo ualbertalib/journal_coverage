@@ -16,6 +16,6 @@ class Journal < WebServices
   end
 
   def to_s
-    "#{@issn}, #{@object_id}, #{date_statement}"
+    "#{@issn}, #{@object_id}, [#{date_statement}]"
   end
 end

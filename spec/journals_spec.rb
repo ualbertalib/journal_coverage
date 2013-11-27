@@ -64,7 +64,7 @@ describe Journals do
       journals = Journals.new
       journals.add @journal_with_summary_holdings
       journals.load_data "spec/test_summary_holdings"
-      journals.report.should == "ISSN, OBJECT ID, SIRSI DATE, SFX DATE\n"+@journal_with_summary_holdings.to_s+", "+journals.statement(journals.list[0].object_id)+"\n"
+      journals.report.should == "ISSN, OBJECT ID, SIRSI DATE, SFX DATE\n"+@journal_with_summary_holdings.to_s+", ["+journals.statement(journals.list[0].object_id)+"]\n"
     end
   end
 

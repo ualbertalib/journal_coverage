@@ -26,7 +26,7 @@ describe Journal do
 
   describe "#to_s" do
     it "should produce a string representation of the journal" do
-      journal_to_s = "0013-063X, 954921341152, 1852-" 
+      journal_to_s = "0013-063X, 954921341152, [1852-]" 
       @journal.to_s.should == journal_to_s
     end
   end
