@@ -38,13 +38,13 @@ class Journals < SummaryHoldings
   def report
     report_text = "ISSN, OBJECT ID, SIRSI DATE, SFX DATE, match?\n"
     @list.each do |journal|
-      report_text += journal.to_s+", ["+statement(journal.object_id)+"], "+match(journal, journal)+"\n"
+      report_text += journal.to_s+", ["+statement(journal.object_id)+"], "+match(journal)+"\n"
     end
     report_text
   end
 
-  def match(journal_in_list, journal_in_summary_holdings)
-    journal_in_list.date_statement == statement(journal_in_summary_holdings.object_id) ? "match" : "no match"
+  def match(journal)
+    journal.date_statement == statement(journal.object_id) ? "match" : "no match"
   end
 end
 

@@ -64,7 +64,7 @@ describe Journals do
       journals = Journals.new
       journals.add @journal_with_summary_holdings
       journals.load_data "spec/test_summary_holdings"
-      journals.match(journals.list[0], @journal_with_summary_holdings).should == "match"
+      journals.match(journals.list[0]).should == "match"
     end
   end
 
