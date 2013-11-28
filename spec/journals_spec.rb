@@ -59,6 +59,15 @@ describe Journals do
     end
   end
 
+  describe "#match?" do
+    it "should return true if the sirsi date and sfx dates match" do
+      journals = Journals.new
+      journals.add @journal_with_summary_holdings
+      journals.load_data "spec/test_summary_holdings"
+      journals.match(journals.list[0], @journal_with_summary_holdings).should == true
+    end
+  end
+
   describe "#report" do
     it "should produce a report" do
       journals = Journals.new

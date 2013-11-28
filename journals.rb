@@ -42,5 +42,9 @@ class Journals < SummaryHoldings
     end
     report_text
   end
+
+  def match(journal_in_list, journal_in_summary_holdings)
+    journal_in_list.date_statement == statement(journal_in_summary_holdings.object_id)
+  end
 end
 
